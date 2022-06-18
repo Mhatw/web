@@ -1,3 +1,3 @@
-import { TitleH2 } from "./title";
+import { Title } from "./title";
 
-export { TitleH2 };
+export { Title };
