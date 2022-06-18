@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Title } from "./components/titles";
+import { Title } from "./components/text";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles";
 
