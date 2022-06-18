@@ -3,22 +3,22 @@ import styled, { useTheme } from "styled-components";
 import PropTypes from "prop-types";
 import { fonts } from "../../styles";
 
-const StyledH2 = styled.h2`
+const StyledParagraph = styled.p`
   font-family: ${fonts.primary};
   font-style: normal;
-  font-weight: 900;
+  font-weight: 400;
   font-size: ${(props) => props.size};
-  line-height: 3rem;
+  line-height: 1.8rem;
   color: ${(props) => props.color};
 `;
 
-export function Title({ size, color, children, ...props }) {
+export function Paragraph({ size, color, children, ...props }) {
   const theme = useTheme().text;
   // text size
   const textSize = {
-    sm: "2rem",
-    md: "2.5rem",
-    lg: "3rem",
+    sm: "1rem",
+    md: "1.5rem",
+    lg: "2rem",
   }[size];
 
   // text color
@@ -28,19 +28,19 @@ export function Title({ size, color, children, ...props }) {
   }[color];
 
   return (
-    <StyledH2 size={textSize} color={textColor} {...props}>
+    <StyledParagraph size={textSize} color={textColor} {...props}>
       {children}
-    </StyledH2>
+    </StyledParagraph>
   );
 }
 
-Title.propTypes = {
+Paragraph.propTypes = {
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   color: PropTypes.oneOf(["primary", "secondary"]),
 };
 
-Title.defaultProps = {
-  children: "Amazing Title",
+Paragraph.defaultProps = {
+  children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   size: "md",
   color: "primary",
 };
