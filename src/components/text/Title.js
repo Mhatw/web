@@ -12,7 +12,7 @@ const StyledH2 = styled.h2`
   color: ${(props) => props.color};
 `;
 
-export function Title({ size, color, text, ...props }) {
+export function Title({ size, color, children, ...props }) {
   const theme = useTheme().text;
   // text size
   const textSize = {
@@ -29,19 +29,19 @@ export function Title({ size, color, text, ...props }) {
 
   return (
     <StyledH2 size={textSize} color={textColor} {...props}>
-      {text}
+      {children}
     </StyledH2>
   );
 }
 
 Title.propTypes = {
-  text: PropTypes.string,
+  children: PropTypes.string,
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   color: PropTypes.oneOf(["primary", "secondary"]),
 };
 
 Title.defaultProps = {
-  text: "Hello World",
+  children: "Hello World",
   size: "md",
   color: "primary",
 };

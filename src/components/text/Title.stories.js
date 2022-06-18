@@ -10,13 +10,13 @@ const Template = (args) => <Title {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   color: "primary",
-  text: "Hello World",
+  children: "Hello World",
   size: "md",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   color: "secondary",
-  text: "Hello World",
+  children: "Hello World",
   size: "md",
 };
