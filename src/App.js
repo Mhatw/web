@@ -1,9 +1,13 @@
 import "./App.css";
 import React from "react";
-import { Paragraph, Title } from "./components/text";
-import { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles";
 import { Button } from "./components/buttons";
+import { HomeView } from "./view/home";
+
+const StyledApp = styled.div`
+  background-color: ${(props) => props.theme.background.secondary};
+`;
 
 function App() {
   const [theme, setTheme] = React.useState("light");
@@ -12,22 +16,10 @@ function App() {
   };
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <div className="App">
-        <Title size="md" color="primary">
-          FullStack Dev.
-          <br />
-          Designer.
-          <br />
-          Disrupter.
-        </Title>
-        <Paragraph size="md">
-          Hi! I’m Cristian, FullStack developer and designer looking for new
-          adventures
-        </Paragraph>
-        <Button maxWidth={true} onClick={toggleTheme}>
-          Toggle Theme
-        </Button>
-      </div>
+      <StyledApp className="App">
+        <HomeView />
+        <Button onClick={toggleTheme}>Toggle Theme</Button>
+      </StyledApp>
     </ThemeProvider>
   );
 }
