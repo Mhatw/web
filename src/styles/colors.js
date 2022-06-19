@@ -13,6 +13,12 @@ export const lightTheme = {
     secondary: "#3F3F3F",
     textSecondary: "#FFFFFF",
   },
+  svg: {
+    primary: "#000000",
+    hoverPrimary: "#FFFFFF",
+    background: "#3F3F3F",
+    hoverBackground: "#000000",
+  },
 };
 export const darkTheme = {
   text: {
@@ -21,12 +27,18 @@ export const darkTheme = {
   },
   background: {
     primary: "#000000",
-    secondary: "#F5F5F5",
+    secondary: "#111111",
   },
   button: {
     primary: "#00303f",
     textPrimary: "#FFFFFF",
     secondary: "#3F3F3F",
     textSecondary: "#FFFFFF",
+  },
+  svg: {
+    primary: "#000000",
+    hoverPrimary: "#3F3F3F",
+    secondary: "#3F3F3F",
+    hoverSecondary: "#FFFFFF",
   },
 };
