@@ -3,6 +3,7 @@ import React from "react";
 import { Paragraph, Title } from "./components/text";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles";
+import { Button } from "./components/buttons";
 
 function App() {
   const [theme, setTheme] = React.useState("light");
@@ -23,7 +24,9 @@ function App() {
           Hi! I’m Cristian, FullStack developer and designer looking for new
           adventures
         </Paragraph>
-        <button onClick={toggleTheme}>Toggle Theme</button>
+        <Button maxWidth={true} onClick={toggleTheme}>
+          Toggle Theme
+        </Button>
       </div>
     </ThemeProvider>
   );
