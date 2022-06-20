@@ -6,12 +6,18 @@ export const lightTheme = {
   background: {
     primary: "#FFFFFF",
     secondary: "#F5F5F5",
+    tertiary: "#C4C4C4",
+    cuartiary: "#E9E9E9",
   },
   button: {
     primary: "#000000",
     textPrimary: "#FFFFFF",
     secondary: "#3F3F3F",
     textSecondary: "#FFFFFF",
+    tertiary: "#C4C4C4",
+    textTertiary: "#000000",
+    cuartiary: "#E9E9E9",
+    textCuartiary: "#000000",
   },
   svg: {
     primary: "#000000",
@@ -34,6 +40,10 @@ export const darkTheme = {
     textPrimary: "#FFFFFF",
     secondary: "#3F3F3F",
     textSecondary: "#FFFFFF",
+    tertiary: "#C4C4C4",
+    textTertiary: "#000000",
+    cuartiary: "#E9E9E9",
+    textCuartiary: "#000000",
   },
   svg: {
     primary: "#000000",

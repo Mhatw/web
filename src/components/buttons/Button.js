@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import PropTypes from "prop-types";
 import { fonts } from "../../styles";
 
@@ -7,8 +7,6 @@ const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.theme.button.primary};
-  color: ${(props) => props.theme.button.textPrimary};
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-family: ${fonts.primary};
@@ -18,12 +16,22 @@ const StyledButton = styled.button`
   line-height: 1.18rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
   ${(props) => (props.maxWidth ? "width: 100%;" : "width: auto;")};
+  background-color: ${(props) => props.color[0]};
+  color: ${(props) => props.color[1]};
 `;
 
-export function Button({ children, maxWidth, ...props }) {
+export function Button({ children, maxWidth, color, ...props }) {
+  const theme = useTheme().button;
+  const btnColor = {
+    primary: [theme.primary, theme.textPrimary],
+    secondary: [theme.secondary, theme.textSecondary],
+    tertiary: [theme.tertiary, theme.textTertiary],
+    cuartiary: [theme.cuartiary, theme.textCuartiary],
+  }[color];
   return (
-    <StyledButton maxWidth={maxWidth} {...props}>
+    <StyledButton maxWidth={maxWidth} color={btnColor} {...props}>
       {children}
     </StyledButton>
   );
@@ -37,4 +45,5 @@ Button.propTypes = {
 Button.defaultProps = {
   children: "Button",
   maxWidth: false,
+  color: "primary",
 };
