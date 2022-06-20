@@ -10,10 +10,10 @@ const StyledDiv = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100vw;
   max-width: 1344px;
-  padding: 2.75rem 3rem 0 3rem;
+  padding: 0rem 3rem 0 3rem;
   gap: 4rem;
   .logo {
     position: absolute;
@@ -47,7 +47,7 @@ const StyledDiv = styled.div`
 export function HomeView() {
   return (
     <StyledDiv>
-      <Logo className="logo" />
+      {/* <Logo className="logo" /> */}
       <div className="left">
         {/* Title */}
         <Title size="md" color="primary">
