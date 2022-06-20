@@ -23,7 +23,15 @@ function App() {
       <StyledApp className="App">
         <Nav />
         <HomeView />
-
+        <Button
+          onClick={toggleTheme}
+          style={{
+            position: "absolute",
+            top: "7rem",
+          }}
+        >
+          Toggle Theme
+        </Button>
         <Footer />
       </StyledApp>
     </ThemeProvider>

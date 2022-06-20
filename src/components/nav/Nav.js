@@ -7,7 +7,7 @@ import { Logo } from "../text";
 const StyledNav = styled.nav`
   position: fixed;
   right: 2.25rem;
-  background-color: ${(props) => props.theme.background.primary};
+  background-color: ${(props) => props.theme.background.secondary};
   z-index: 1;
   display: flex;
   flex-direction: row;
