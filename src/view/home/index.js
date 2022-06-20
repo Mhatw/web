@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../../components/buttons";
-import { Logo, Paragraph, Title } from "../../components/text";
+import { Paragraph, Title } from "../../components/text";
 import { SvgContainer } from "../../components/containers";
 
 const StyledDiv = styled.div`
@@ -15,13 +15,8 @@ const StyledDiv = styled.div`
   max-width: 1344px;
   padding: 0rem 3rem 0 3rem;
   gap: 4rem;
-  .logo {
-    position: absolute;
-    top: 2.25rem;
-    left: 2.25rem;
-  }
   .left {
-
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -33,6 +28,9 @@ const StyledDiv = styled.div`
     }
     p {
       text-align: left;
+    }
+    .social{
+      margin: 2.125rem 0;
     }
   }
   img{
@@ -63,7 +61,7 @@ export function HomeView() {
           adventures
         </Paragraph>
         {/* svg container */}
-        <SvgContainer />
+        <SvgContainer className="social" />
         {/* button */}
         <Button maxWidth={true}>View Resume</Button>
       </div>

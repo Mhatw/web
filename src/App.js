@@ -5,11 +5,12 @@ import { darkTheme, lightTheme } from "./styles";
 import { Button } from "./components/buttons";
 import { HomeView } from "./view/home";
 import { Nav } from "./components/nav";
+import { Footer } from "./components/footer";
 
 const StyledApp = styled.div`
   background-color: ${(props) => props.theme.background.primary};
   position: relative;
-  height: 200vh;
+  // height: 200vh;
 `;
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Nav />
         <HomeView />
         <Button onClick={toggleTheme}>Toggle Theme</Button>
+        <Footer />
       </StyledApp>
     </ThemeProvider>
   );

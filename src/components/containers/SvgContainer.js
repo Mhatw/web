@@ -7,7 +7,6 @@ const StyledDiv = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin: 2.125rem 0;
   &:hover {
     cursor: pointer;
   }
@@ -27,9 +26,9 @@ const StyledDiv = styled.div`
   }
 `;
 
-export function SvgContainer() {
+export function SvgContainer({ ...props }) {
   return (
-    <StyledDiv>
+    <StyledDiv {...props}>
       <Linkedin />
       <Github />
       <Instagram />
