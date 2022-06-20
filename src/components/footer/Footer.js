@@ -9,7 +9,7 @@ const StyledFooter = styled.footer`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2.5rem;
+  padding: 1.5rem 2.5rem;
   gap: 1rem;
   @media (max-width: 600px) {
     flex-direction: column;
@@ -55,6 +55,7 @@ const StyledFooter = styled.footer`
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 0.75rem;
+    margin: 1rem 0;
     display: flex;
     align-items: center;
     text-align: center;
@@ -74,7 +75,7 @@ export function Footer() {
         </div>
       </div>
       <p>
-        &copy; Copyright 2022 <span>-Mhatw</span>
+        &copy; Copyright 2022 <span>&nbsp;Mhatw</span>
       </p>
     </StyledFooter>
   );
