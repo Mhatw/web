@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../../components/buttons";
 import { PortfolioContainer } from "../../components/containers";
@@ -30,11 +30,8 @@ const StyledDiv = styled.div`
     width: 100%;
     align-items: flex-start;
     justify-content: center;
-    min-height: 90vh;
-    margin-top: 1rem;
-    padding: 1.5rem;
-    gap: 1.5rem;
     text-align: left;
+    gap: 1.5rem;
   }
   .tagsContainer {
     display: flex;
@@ -62,20 +59,43 @@ const StyledDiv = styled.div`
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
+    background-color: #bababa;
+    animation: loading 1s ease-in infinite;
+    min-height: 10rem;
+  }
+  @keyframes loading {
+    0% {
+      background: #fafafa;
+    }
+    50% {
+      background: #eaeaea;
+    }
+    100% {
+      background: #fafafa;
+    }
   }
 `;
-
+const StyledDiv2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  text-align: left;
+`;
 export default function Category() {
   let params = useParams();
   let projectsData = projects.filter((project) =>
     project.lang.includes(params.id.toLowerCase())
   );
   console.log(params, projectsData);
-  return (
+  return projectsData.length !== 0 ? (
     <StyledDiv>
       <PortfolioContainer bgcolor="#F5F5F5">
-        {" "}
-        <Title size="sm">{params.id}</Title>{" "}
+        <Link to="/portfolio">
+          <Title size="sm">{params.id}</Title>
+        </Link>
       </PortfolioContainer>
       <div className="container">
         {projectsData.map((project) => (
@@ -101,5 +121,17 @@ export default function Category() {
         ))}
       </div>
     </StyledDiv>
+  ) : (
+    <StyledDiv2>
+      <Paragraph>
+        No projects loaded for<Title>{params.id}</Title> category.
+        <br />
+        <br />
+        Please check back later.
+      </Paragraph>
+      <Link to="/portfolio">
+        <Button color="secondary">Go to porfolio</Button>
+      </Link>
+    </StyledDiv2>
   );
 }
