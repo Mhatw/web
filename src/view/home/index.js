@@ -65,7 +65,17 @@ export function HomeView() {
           {/* svg container */}
           <SvgContainer className="social" />
           {/* button */}
-          <Button maxWidth={true}>View Resume</Button>
+          <Button
+            maxWidth={true}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1j5OATajjRVbJHlv8RXfGO0797lqYg5ZK/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            View Resume
+          </Button>
         </div>
         <img
           src="https://images.pexels.com/photos/7213441/pexels-photo-7213441.jpeg?cs=srgb&dl=pexels-ivan-samkov-7213441.jpg&fm=jpg"

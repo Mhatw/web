@@ -5,6 +5,7 @@ export function renderCategories(categories) {
     return (
       <CategoryDiv
         key={category.id}
+        path={`/portfolio/${category.path}`}
         name={category.name}
         bgcolor={category.bgcolor}
       ></CategoryDiv>

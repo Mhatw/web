@@ -113,7 +113,11 @@ export function Nav() {
       <Logo />
       <StyledNav>
         <NavLink to="/contact">
-          <Button>
+          <Button
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/mhatw/", "_blank")
+            }
+          >
             <Comment />
             <p>contact me</p>
           </Button>

@@ -19,19 +19,22 @@ const StyledUl = styled.ul`
 `;
 
 export function Links({ toggleNav }) {
-  console.log(toggleNav);
   const routes = [
     { name: "Home", path: "/" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
+  function handleClick() {
+    toggleNav();
+    window.scrollTo(0, 0);
+  }
   return (
     <StyledUl>
       {routes.map((route) => (
         <li key={route.name}>
           <NavLink
-            onClick={toggleNav}
+            onClick={handleClick}
             style={({ isActive }) => {
               return { color: isActive ? "#bababa" : "" };
             }}
