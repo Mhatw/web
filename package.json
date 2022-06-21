@@ -6,6 +6,7 @@
     "@styled-icons/boxicons-logos": "^10.38.0",
     "@styled-icons/boxicons-regular": "^10.38.0",
     "@styled-icons/boxicons-solid": "^10.38.0",
+    "@styled-icons/octicons": "^10.44.0",
     "@styled-icons/simple-icons": "^10.45.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

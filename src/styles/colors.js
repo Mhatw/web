@@ -12,12 +12,16 @@ export const lightTheme = {
   button: {
     primary: "#023e8a",
     textPrimary: "#FFFFFF",
+    hoverPrimary: "#00469E",
     secondary: "#3F3F3F",
     textSecondary: "#FFFFFF",
+    hoverSecondary: "#2F2F2F",
     tertiary: "#C4C4C4",
     textTertiary: "#000000",
+    hoverTertiary: "#939393",
     cuartiary: "#E9E9E9",
     textCuartiary: "#000000",
+    hoverCuartiary: "#939393",
   },
   svg: {
     primary: "#000000",
