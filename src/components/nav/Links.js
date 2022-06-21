@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledUl = styled.ul`
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +15,6 @@ const StyledUl = styled.ul`
     color: ${(props) => props.theme.text.primary};
     font-size: 36px;
     line-height: 44px;
-    // border: 1px solid blue;
   }
 `;
 

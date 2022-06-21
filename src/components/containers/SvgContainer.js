@@ -1,4 +1,5 @@
 import { Github, Instagram, Linkedin } from "@styled-icons/boxicons-logos";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
@@ -29,9 +30,30 @@ const StyledDiv = styled.div`
 export function SvgContainer({ ...props }) {
   return (
     <StyledDiv {...props}>
-      <Linkedin />
-      <Github />
-      <Instagram />
+      <Link
+        to={{
+          pathname: "https://www.linkedin.com/in/mhatw/",
+        }}
+        target="_blank"
+      >
+        <Linkedin />
+      </Link>
+      <Link
+        to={{
+          pathname: "https://github.com/Mhatw",
+        }}
+        target="_blank"
+      >
+        <Github />
+      </Link>
+      <Link
+        to={{
+          pathname: "https://www.linkedin.com/in/mhatw/",
+        }}
+        target="_blank"
+      >
+        <Instagram />
+      </Link>
     </StyledDiv>
   );
 }

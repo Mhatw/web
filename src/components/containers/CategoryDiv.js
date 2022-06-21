@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-export function Category({ name, bgcolor, ...props }) {
+export function CategoryDiv({ name, bgcolor, ...props }) {
   return (
     <StyledDiv bgcolor={bgcolor} {...props}>
       <p>{name}</p>
@@ -32,11 +32,11 @@ export function Category({ name, bgcolor, ...props }) {
   );
 }
 
-Category.propTypes = {
+CategoryDiv.propTypes = {
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   color: PropTypes.oneOf(["primary", "secondary"]),
 };
 
-Category.defaultProps = {
+CategoryDiv.defaultProps = {
   bgcolor: "#D9D9D9",
 };

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Button } from "../../components/buttons";
 import { Paragraph, Title } from "../../components/text";
-import { Category, SvgContainer } from "../../components/containers";
+import { SvgContainer } from "../../components/containers";
+import { Categories } from "../portfolio/Categories";
 
 const StyledDiv = styled.div`
   position: relative;
@@ -42,33 +43,6 @@ const StyledDiv = styled.div`
   }
 `;
 
-const StyledCategory = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100vw;
-`;
-
-function renderCategories(categories) {
-  return categories.map((category) => {
-    return (
-      <Category
-        key={category.id}
-        name={category.name}
-        bgcolor={category.bgcolor}
-      ></Category>
-    );
-  });
-}
-const categories = [
-  { id: 1, name: "Ruby Projects", bgcolor: "#D9D9D9" },
-  { id: 2, name: "Javascript Projects", bgcolor: "#F3F3F3" },
-  { id: 3, name: "React Projects", bgcolor: "#EDEDED" },
-  { id: 4, name: "Graphic Design", bgcolor: "#D9D9D9" },
-];
-
 export function HomeView() {
   return (
     <>
@@ -98,7 +72,7 @@ export function HomeView() {
           alt="portada"
         />
       </StyledDiv>
-      <StyledCategory>{renderCategories(categories)}</StyledCategory>
+      <Categories />
     </>
   );
 }
