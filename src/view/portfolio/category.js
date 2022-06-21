@@ -8,14 +8,21 @@ import { projects } from "../../data";
 
 const StyledDiv = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   width: 100vw;
   min-height: 90vh;
   margin-top: 1rem;
   padding: 1.5rem;
   gap: 1.5rem;
+  text-align: left;
+  .render {
+    > h2 {
+      width: 100%;
+    }
+  }
   .tagsContainer {
     display: flex;
     flex-direction: row;
@@ -59,7 +66,11 @@ export default function Category() {
       </PortfolioContainer>
 
       {projectsData.map((project) => (
-        <PortfolioContainer key={project.id} bgcolor={project.bgcolor}>
+        <PortfolioContainer
+          className="render"
+          key={project.id}
+          bgcolor={project.bgcolor}
+        >
           <div className="iconTagsContainer">{iconTags(project.icons)}</div>
           <Title size="sm">{project.name}</Title>
           <div className="tagsContainer">{tags(project.tags)}</div>

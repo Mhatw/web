@@ -9,7 +9,6 @@ import { Outlet } from "react-router-dom";
 
 const StyledApp = styled.div`
   background-color: ${(props) => props.theme.background.primary};
-  position: relative;
 `;
 
 function App() {
