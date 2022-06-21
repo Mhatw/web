@@ -9,6 +9,7 @@ import { HomeView } from "./view/home";
 import { PortfolioView } from "./view/portfolio";
 import { IndexCategories } from "./view/portfolio/Categories";
 import Category from "./view/portfolio/category";
+import { IndexContact } from "./view/contact";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -22,7 +23,7 @@ root.render(
           <Route path=":id" element={<Category />} />
         </Route>
         <Route path="/about" element={<Title>about</Title>} />
-        <Route path="/contact" element={<Title>contact</Title>} />
+        <Route path="/contact" element={<IndexContact />} />
       </Route>
     </Routes>
   </BrowserRouter>
