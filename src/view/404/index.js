@@ -20,7 +20,7 @@ export default function NotFound() {
         <Title>404</Title>Page not found.
         <br />
         <br />
-        Seems that you are lost 😨.
+        Seems that you are lost 😨
       </Paragraph>
       <Link to="/">
         <Button color="secondary">Go to home</Button>

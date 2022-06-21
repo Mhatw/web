@@ -161,7 +161,7 @@ export const projects = [
       "http://drive.google.com/uc?export=view&id=1Ri4TW-bTZwkmntyPjYNENZ72QCNGz9Ap",
     url: "https://drive.google.com/file/d/1y9z5VV168bxjlSMYttstbORk-ALP8KNJ/view?usp=sharing",
     icons: [<Adobeillustrator />, <Adobephotoshop />],
-    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    tags: ["Color Theory", "Vectors", "Mockups", "Compositions"],
     bgcolor: bg,
   },
   {
@@ -174,7 +174,7 @@ export const projects = [
       "http://drive.google.com/uc?export=view&id=1dhXXKwRvtQ2VP27ONM_e0pOUsMBVjOAf",
     url: "https://drive.google.com/file/d/1y9z5VV168bxjlSMYttstbORk-ALP8KNJ/view?usp=sharing",
     icons: [<Adobeillustrator />, <Adobephotoshop />],
-    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    tags: ["Color Theory", "Vectors", "Mockups", "Compositions"],
     bgcolor: bg,
   },
   {
@@ -187,7 +187,7 @@ export const projects = [
       "http://drive.google.com/uc?export=view&id=1mBr5BExn-mP7NipMrpnOHDgfrjQ_C2lW",
     url: "https://drive.google.com/file/d/1uBK6OGPEoveMWZlNXCpKVO40kfXHnSYl/view?usp=sharing",
     icons: [<Adobeillustrator />, <Adobephotoshop />],
-    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    tags: ["Color Theory", "Vectors", "Mockups", "Compositions"],
     bgcolor: bg,
   },
   {
@@ -200,7 +200,7 @@ export const projects = [
       "http://drive.google.com/uc?export=view&id=1UMKW0k2Xpi5hG7qH4dDgc3ddrieSVqb9",
     url: "https://drive.google.com/file/d/1q4EAsdICO2KA7pMu0WjDCG2gdTdB0HWg/view?usp=sharing",
     icons: [<Adobeillustrator />, <Adobephotoshop />],
-    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    tags: ["Color Theory", "Vectors", "Mockups", "Compositions"],
     bgcolor: bg,
   },
   {
@@ -218,7 +218,7 @@ export const projects = [
       <Adobepremierepro />,
       <Adobeaftereffects />,
     ],
-    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    tags: ["Color Theory", "Vectors", "Mockups", "Compositions"],
     bgcolor: bg,
   },
 ];
