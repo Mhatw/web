@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { fonts } from "../../styles";
 
 const StyledUl = styled.ul`
   display: flex;
@@ -9,7 +10,7 @@ const StyledUl = styled.ul`
   width: 100%;
   gap: 2rem;
   li {
-    font-family: "Inter";
+    font-family: ${fonts.primary};
     font-style: normal;
     font-weight: 900;
     color: ${(props) => props.theme.text.primary};
