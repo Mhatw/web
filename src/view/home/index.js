@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Button } from "../../components/buttons";
 import { Paragraph, Title } from "../../components/text";
-import { Category, SvgContainer } from "../../components/containers";
+import { SvgContainer } from "../../components/containers";
+import { Categories } from "../portfolio/Categories";
 
 const StyledDiv = styled.div`
   position: relative;
@@ -42,33 +43,6 @@ const StyledDiv = styled.div`
   }
 `;
 
-const StyledCategory = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100vw;
-`;
-
-function renderCategories(categories) {
-  return categories.map((category) => {
-    return (
-      <Category
-        key={category.id}
-        name={category.name}
-        bgcolor={category.bgcolor}
-      ></Category>
-    );
-  });
-}
-const categories = [
-  { id: 1, name: "Ruby Projects", bgcolor: "#D9D9D9" },
-  { id: 2, name: "Javascript Projects", bgcolor: "#F3F3F3" },
-  { id: 3, name: "React Projects", bgcolor: "#EDEDED" },
-  { id: 4, name: "Graphic Design", bgcolor: "#D9D9D9" },
-];
-
 export function HomeView() {
   return (
     <>
@@ -91,14 +65,24 @@ export function HomeView() {
           {/* svg container */}
           <SvgContainer className="social" />
           {/* button */}
-          <Button maxWidth={true}>View Resume</Button>
+          <Button
+            maxWidth={true}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1j5OATajjRVbJHlv8RXfGO0797lqYg5ZK/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            View Resume
+          </Button>
         </div>
         <img
           src="https://images.pexels.com/photos/7213441/pexels-photo-7213441.jpeg?cs=srgb&dl=pexels-ivan-samkov-7213441.jpg&fm=jpg"
           alt="portada"
         />
       </StyledDiv>
-      <StyledCategory>{renderCategories(categories)}</StyledCategory>
+      <Categories />
     </>
   );
 }

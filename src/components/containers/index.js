@@ -1,4 +1,5 @@
-import { Category } from "./Category";
+import { CategoryDiv } from "./CategoryDiv";
 import { SvgContainer } from "./SvgContainer";
+import { PortfolioContainer } from "./PortfolioContainer";
 
-export { SvgContainer, Category };
+export { SvgContainer, CategoryDiv, PortfolioContainer };

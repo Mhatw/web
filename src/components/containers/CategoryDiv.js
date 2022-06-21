@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts } from "../../styles";
+import { Link } from "react-router-dom";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -24,19 +25,25 @@ const StyledDiv = styled.div`
   }
 `;
 
-export function Category({ name, bgcolor, ...props }) {
+export function CategoryDiv({ name, path, bgcolor, ...props }) {
   return (
-    <StyledDiv bgcolor={bgcolor} {...props}>
-      <p>{name}</p>
-    </StyledDiv>
+    <Link to={path}>
+      <StyledDiv
+        onClick={() => window.scrollTo(0, 0)}
+        bgcolor={bgcolor}
+        {...props}
+      >
+        <p>{name}</p>
+      </StyledDiv>
+    </Link>
   );
 }
 
-Category.propTypes = {
+CategoryDiv.propTypes = {
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   color: PropTypes.oneOf(["primary", "secondary"]),
 };
 
-Category.defaultProps = {
+CategoryDiv.defaultProps = {
   bgcolor: "#D9D9D9",
 };

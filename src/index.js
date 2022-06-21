@@ -6,6 +6,10 @@ import "./index.css";
 import App from "./App";
 import { Title } from "./components/text";
 import { HomeView } from "./view/home";
+import { PortfolioView } from "./view/portfolio";
+import { IndexCategories } from "./view/portfolio/Categories";
+import Category from "./view/portfolio/category";
+import { IndexContact } from "./view/contact";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -14,9 +18,12 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/" element={<HomeView />} />
-        <Route path="/portfolio" element={<Title>portfolio</Title>} />
+        <Route path="/portfolio" element={<PortfolioView />}>
+          <Route index element={<IndexCategories />} />
+          <Route path=":id" element={<Category />} />
+        </Route>
         <Route path="/about" element={<Title>about</Title>} />
-        <Route path="/contact" element={<Title>contact</Title>} />
+        <Route path="/contact" element={<IndexContact />} />
       </Route>
     </Routes>
   </BrowserRouter>

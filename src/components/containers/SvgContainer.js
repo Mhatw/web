@@ -29,9 +29,21 @@ const StyledDiv = styled.div`
 export function SvgContainer({ ...props }) {
   return (
     <StyledDiv {...props}>
-      <Linkedin />
-      <Github />
-      <Instagram />
+      <Linkedin
+        onClick={() =>
+          window.open("https://www.linkedin.com/in/mhatw/", "_blank")
+        }
+      />
+
+      <Github
+        onClick={() => window.open("https://github.com/Mhatw", "_blank")}
+      />
+
+      <Instagram
+        onClick={() =>
+          window.open("https://www.instagram.com/_mhatw/", "_blank")
+        }
+      />
     </StyledDiv>
   );
 }

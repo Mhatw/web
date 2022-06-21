@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { fonts } from "../../styles";
 
@@ -12,5 +13,9 @@ const StyledLogo = styled.h1`
 `;
 
 export function Logo({ ...props }) {
-  return <StyledLogo {...props}>Mhatw</StyledLogo>;
+  return (
+    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+      <StyledLogo {...props}>Mhatw</StyledLogo>
+    </Link>
+  );
 }
