@@ -7,7 +7,14 @@ import {
 } from "@styled-icons/boxicons-logos";
 import { Terminal } from "@styled-icons/boxicons-regular";
 import { Ruby } from "@styled-icons/octicons";
-import { Adobeillustrator, Bulma, Vite } from "@styled-icons/simple-icons";
+import {
+  Adobeaftereffects,
+  Adobeillustrator,
+  Adobephotoshop,
+  Adobepremierepro,
+  Bulma,
+  Vite,
+} from "@styled-icons/simple-icons";
 
 export const categories = [
   {
@@ -39,7 +46,7 @@ export const categories = [
     icon: <Adobeillustrator />,
   },
 ];
-
+const bg = "#e6ecf2";
 export const projects = [
   {
     id: 1,
@@ -51,7 +58,7 @@ export const projects = [
     url: "https://github.com/Mhatw/CalenCLI",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["Control Flow", "Loops", "Methods", "Dates"],
-    bgcolor: "#e6ecf2",
+    bgcolor: bg,
   },
   {
     id: 2,
@@ -63,7 +70,7 @@ export const projects = [
     url: "https://github.com/Mhatw/Pokemon-Ruby",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["Clases", "Modules", "Inheritance"],
-    bgcolor: "#e6ecf2",
+    bgcolor: bg,
   },
   {
     id: 3,
@@ -75,7 +82,7 @@ export const projects = [
     url: "https://github.com/Mhatw/CLIn-Boards",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["File Manipulation", "Clases", "JSON"],
-    bgcolor: "#e6ecf2",
+    bgcolor: bg,
   },
   {
     id: 4,
@@ -87,7 +94,7 @@ export const projects = [
     url: "https://github.com/Mhatw/Expensable-CLI",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["HTTP Requests", "Classes", "Modules"],
-    bgcolor: "#e6ecf2",
+    bgcolor: bg,
   },
   {
     id: 5,
@@ -99,7 +106,7 @@ export const projects = [
     url: "https://github.com/Mhatw/Expensable-CLI",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["HTTP Requests", "Classes", "Modules"],
-    bgcolor: "#e6ecf2",
+    bgcolor: bg,
   },
   {
     id: 6,
@@ -111,7 +118,7 @@ export const projects = [
     url: "https://contacts-ruby.vercel.app/",
     icons: [<Javascript />, <Html5 />, <Css3 />, <Bulma />, <Github />],
     tags: ["Funtions", "Objects", "Logins"],
-    bgcolor: "#e6ecf2",
+    bgcolor: bg,
   },
   {
     id: 7,
@@ -123,7 +130,7 @@ export const projects = [
     url: "https://mhatw-todo-list.vercel.app/",
     icons: [<Javascript />, <Html5 />, <Css3 />, <Bulma />, <Github />],
     tags: ["LocalStorage", "Objets", "Render"],
-    bgcolor: "#e6ecf2",
+    bgcolor: bg,
   },
   {
     id: 8,
@@ -142,6 +149,76 @@ export const projects = [
       <Vite />,
     ],
     tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
-    bgcolor: "#e6ecf2",
+    bgcolor: bg,
+  },
+  {
+    id: 9,
+    lang: ["design"],
+    name: "LBS Flores",
+    description:
+      "The brand was made for a construction company. The brand was made with Adobe Illustrator and Adobe Photoshop.",
+    image:
+      "http://drive.google.com/uc?export=view&id=1Ri4TW-bTZwkmntyPjYNENZ72QCNGz9Ap",
+    url: "https://drive.google.com/file/d/1y9z5VV168bxjlSMYttstbORk-ALP8KNJ/view?usp=sharing",
+    icons: [<Adobeillustrator />, <Adobephotoshop />],
+    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    bgcolor: bg,
+  },
+  {
+    id: 10,
+    lang: ["design"],
+    name: "El Guapo Burguer",
+    description:
+      "The brand was made for a fastfood restaurant. The brand was made with Adobe Illustrator and Adobe Photoshop.",
+    image:
+      "http://drive.google.com/uc?export=view&id=1dhXXKwRvtQ2VP27ONM_e0pOUsMBVjOAf",
+    url: "https://drive.google.com/file/d/1y9z5VV168bxjlSMYttstbORk-ALP8KNJ/view?usp=sharing",
+    icons: [<Adobeillustrator />, <Adobephotoshop />],
+    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    bgcolor: bg,
+  },
+  {
+    id: 11,
+    lang: ["design"],
+    name: "MS constructora",
+    description:
+      "The brand was made for a general services company. The brand was made with Adobe Illustrator and Adobe Photoshop.",
+    image:
+      "http://drive.google.com/uc?export=view&id=1mBr5BExn-mP7NipMrpnOHDgfrjQ_C2lW",
+    url: "https://drive.google.com/file/d/1uBK6OGPEoveMWZlNXCpKVO40kfXHnSYl/view?usp=sharing",
+    icons: [<Adobeillustrator />, <Adobephotoshop />],
+    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    bgcolor: bg,
+  },
+  {
+    id: 12,
+    lang: ["design"],
+    name: "Fashion and Style Vision",
+    description:
+      "The brand was made for a textil company. The brand was made with Adobe Illustrator and Adobe Photoshop.",
+    image:
+      "http://drive.google.com/uc?export=view&id=1UMKW0k2Xpi5hG7qH4dDgc3ddrieSVqb9",
+    url: "https://drive.google.com/file/d/1q4EAsdICO2KA7pMu0WjDCG2gdTdB0HWg/view?usp=sharing",
+    icons: [<Adobeillustrator />, <Adobephotoshop />],
+    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    bgcolor: bg,
+  },
+  {
+    id: 13,
+    lang: ["design"],
+    name: "More designs here!",
+    description:
+      "You can find more designs here. You can also contact me to make a new design.",
+    image:
+      "http://drive.google.com/uc?export=view&id=1F3fc8rp6rh-B1sj2YagQTCy9rcJ_XWmR",
+    url: "https://drive.google.com/drive/folders/1eBVk_v2F8Z4QvxLVhEzer8el7oSIHaVV?usp=sharing",
+    icons: [
+      <Adobeillustrator />,
+      <Adobephotoshop />,
+      <Adobepremierepro />,
+      <Adobeaftereffects />,
+    ],
+    tags: ["Vite Framework", "InnerHtml", "DOM", "Events"],
+    bgcolor: bg,
   },
 ];

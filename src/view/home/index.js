@@ -38,9 +38,22 @@ const StyledDiv = styled.div`
     width: 50%;
     max-height: 80vh;
     fit-content: cover;
+    animation: loading 1s ease-in infinite;
+    
     @media (max-width: 800px) {
       display: none;
   }
+  @keyframes loading {
+    0% {
+      background: #fafafa;
+    }
+    50% {
+      background: #eaeaea;
+    }
+    100% {
+      background: #fafafa;
+    }
+    }
 `;
 
 export function HomeView() {

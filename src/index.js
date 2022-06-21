@@ -10,6 +10,7 @@ import { PortfolioView } from "./view/portfolio";
 import { IndexCategories } from "./view/portfolio/Categories";
 import Category from "./view/portfolio/category";
 import { IndexContact } from "./view/contact";
+import NotFound from "./view/404";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -24,6 +25,7 @@ root.render(
         </Route>
         <Route path="/about" element={<Title>about</Title>} />
         <Route path="/contact" element={<IndexContact />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   </BrowserRouter>
