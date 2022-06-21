@@ -6,6 +6,7 @@ import { Button } from "./components/buttons";
 import { HomeView } from "./view/home";
 import { Nav } from "./components/nav";
 import { Footer } from "./components/footer";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const StyledApp = styled.div`
   background-color: ${(props) => props.theme.background.primary};
@@ -17,21 +18,13 @@ function App() {
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+
   console.log(<Button onClick={toggleTheme}>Toggle Theme</Button>);
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <StyledApp className="App">
         <Nav />
-        <HomeView />
-        <Button
-          onClick={toggleTheme}
-          style={{
-            position: "absolute",
-            top: "7rem",
-          }}
-        >
-          Toggle Theme
-        </Button>
+        <Outlet />
         <Footer />
       </StyledApp>
     </ThemeProvider>
