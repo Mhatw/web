@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
   min-height: 90vh;
   width: 100vw;
   max-width: 1344px;
-  padding: 0rem 3rem 0 3rem;
+  padding: 0rem 2rem 0 3rem;
   gap: 4rem;
   .left {
     
