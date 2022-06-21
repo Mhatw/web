@@ -10,7 +10,7 @@ const StyledCategory = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
+  width: 98vw;
 `;
 
 const StyledDiv = styled.div`
@@ -18,7 +18,7 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   margin-top: 1rem;
   padding: 1.5rem;
 `;
@@ -33,7 +33,7 @@ export function IndexCategories() {
       <StyledDiv>
         <PortfolioContainer bgcolor="#F5F5F5">
           {" "}
-          <Title size="sm"> Portfolio</Title>{" "}
+          <Title size="sm">Portfolio</Title>{" "}
         </PortfolioContainer>
       </StyledDiv>
       <StyledCategory>{renderCategories(categories)}</StyledCategory>

@@ -7,7 +7,7 @@ const StyledDiv = styled.div`
   overflow: auto;
   justify-content: center;
   padding: 2rem 1.5rem;
-  width: 40%;
+  width: 30%;
   box-sized: border-box;
   border-radius: 0.5rem;
   background-color: ${(props) => props.bgcolor};

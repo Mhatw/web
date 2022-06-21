@@ -15,6 +15,10 @@ const StyledUl = styled.ul`
     color: ${(props) => props.theme.text.primary};
     font-size: 36px;
     line-height: 44px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: ${(props) => props.theme.button.hoverPrimary};
+    }
   }
 `;
 

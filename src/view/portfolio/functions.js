@@ -8,6 +8,7 @@ export function renderCategories(categories) {
         path={`/portfolio/${category.path}`}
         name={category.name}
         bgcolor={category.bgcolor}
+        icon={category.icon}
       ></CategoryDiv>
     );
   });

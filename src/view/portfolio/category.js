@@ -23,6 +23,19 @@ const StyledDiv = styled.div`
       width: 100%;
     }
   }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 90vh;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    text-align: left;
+  }
   .tagsContainer {
     display: flex;
     flex-direction: row;
@@ -64,28 +77,29 @@ export default function Category() {
         {" "}
         <Title size="sm">{params.id}</Title>{" "}
       </PortfolioContainer>
-
-      {projectsData.map((project) => (
-        <PortfolioContainer
-          className="render"
-          key={project.id}
-          bgcolor={project.bgcolor}
-        >
-          <div className="iconTagsContainer">{iconTags(project.icons)}</div>
-          <Title size="sm">{project.name}</Title>
-          <div className="tagsContainer">{tags(project.tags)}</div>
-          <Paragraph size="sm">{project.description}</Paragraph>
-          <img src={project.image} alt={project.name} />
-
-          <Button
-            maxWidth={true}
-            onClick={() => window.open(`${project.url}`, "_blank")}
+      <div className="container">
+        {projectsData.map((project) => (
+          <PortfolioContainer
+            className="render"
+            key={project.id}
+            bgcolor={project.bgcolor}
           >
-            {" "}
-            See project{" "}
-          </Button>
-        </PortfolioContainer>
-      ))}
+            <div className="iconTagsContainer">{iconTags(project.icons)}</div>
+            <Title size="sm">{project.name}</Title>
+            <div className="tagsContainer">{tags(project.tags)}</div>
+            <Paragraph size="sm">{project.description}</Paragraph>
+            <img src={project.image} alt={project.name} />
+
+            <Button
+              maxWidth={true}
+              onClick={() => window.open(`${project.url}`, "_blank")}
+            >
+              {" "}
+              See project{" "}
+            </Button>
+          </PortfolioContainer>
+        ))}
+      </div>
     </StyledDiv>
   );
 }

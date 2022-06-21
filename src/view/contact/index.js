@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "../../components/buttons";
 import { PortfolioContainer } from "../../components/containers";
-import { Paragraph, Title } from "../../components/text";
+import { Paragraph } from "../../components/text";
 
 const StyledDiv = styled.div`
   display: flex;
