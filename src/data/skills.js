@@ -49,15 +49,15 @@ export const devSkills = [
   },
   {
     id: 4,
-    name: "Ruby on Rails",
-    icon: <Rubyonrails />,
-    color: "#d30001",
-  },
-  {
-    id: 5,
     name: "Vite",
     icon: <Vite />,
     color: "#5daeff",
+  },
+  {
+    id: 5,
+    name: "Ruby on Rails",
+    icon: <Rubyonrails />,
+    color: "#d30001",
   },
   {
     id: 6,
@@ -91,39 +91,39 @@ export const devSkills = [
   },
   {
     id: 11,
-    name: "PostgreSQL",
-    icon: <Postgresql />,
-    color: "#336791",
-  },
-  {
-    id: 12,
-    name: "Git",
-    icon: <Git />,
-    color: "#f03c2e",
-  },
-  {
-    id: 13,
-    name: "GitHub",
-    icon: <Github />,
-    color: "#336791",
-  },
-  {
-    id: 14,
     name: "Linux",
     icon: <Linux />,
     color: "#0277bd",
   },
   {
-    id: 15,
-    name: "Terminal",
-    icon: <Terminal />,
+    id: 12,
+    name: "PostgreSQL",
+    icon: <Postgresql />,
     color: "#336791",
   },
   {
-    id: 16,
+    id: 13,
     name: "Styled Components",
     icon: <Styledcomponents />,
     color: "#7812f8",
+  },
+  {
+    id: 14,
+    name: "GitHub",
+    icon: <Github />,
+    color: "#336791",
+  },
+  {
+    id: 15,
+    name: "Git",
+    icon: <Git />,
+    color: "#f03c2e",
+  },
+  {
+    id: 16,
+    name: "Terminal",
+    icon: <Terminal />,
+    color: "#336791",
   },
 ];
 export const designSkills = [
