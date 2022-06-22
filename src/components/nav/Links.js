@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import { fonts } from "../../styles";
 
 const StyledUl = styled.ul`
@@ -24,6 +24,7 @@ const StyledUl = styled.ul`
 `;
 
 export function Links({ toggleNav }) {
+  const theme = useTheme();
   const routes = [
     { name: "Home", path: "/" },
     { name: "Portfolio", path: "/portfolio" },
@@ -41,7 +42,7 @@ export function Links({ toggleNav }) {
           <NavLink
             onClick={handleClick}
             style={({ isActive }) => {
-              return { color: isActive ? "#bababa" : "" };
+              return { color: isActive ? theme.text.secondary : "" };
             }}
             to={route.path}
           >

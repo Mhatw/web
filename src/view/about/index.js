@@ -26,7 +26,7 @@ import {
   Rubyonrails,
   Vite,
 } from "@styled-icons/simple-icons";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import { PortfolioContainer } from "../../components/containers";
 import { Paragraph, Title } from "../../components/text";
 
@@ -245,14 +245,15 @@ function iconSkillTags(icon) {
 }
 
 export function AboutView() {
+  const theme = useTheme();
   return (
     <>
       <StyledDiv>
-        <PortfolioContainer bgcolor="#F5F5F5">
+        <PortfolioContainer bgcolor={theme.background.gray}>
           <Title size="sm">About</Title>
         </PortfolioContainer>
         <StyledDiv3>
-          <PortfolioContainer bgcolor="#fff1e6">
+          <PortfolioContainer bgcolor={theme.background.cardGray}>
             <Paragraph size="sm">
               Hi 👋🏻, I'm Cristian, a Full Stack developer, and designer.
               <br />
@@ -286,17 +287,17 @@ export function AboutView() {
           </PortfolioContainer>
 
           <StyledPortfolioContainer bgcolor="transparent">
-            <PortfolioContainer bgcolor="#dfe7fd">
+            <PortfolioContainer bgcolor={theme.background.blue}>
               <Title size="sm">Dev Skills</Title>
               <StyledDiv2>{iconSkillTags(devSkills)}</StyledDiv2>
             </PortfolioContainer>
 
-            <PortfolioContainer bgcolor="#eae4e9">
+            <PortfolioContainer bgcolor={theme.background.violet}>
               <Title size="sm">Design Skills</Title>
               <StyledDiv2>{iconSkillTags(designSkills)}</StyledDiv2>
             </PortfolioContainer>
           </StyledPortfolioContainer>
-          <PortfolioContainer bgcolor="#fad2e1">
+          <PortfolioContainer bgcolor={theme.background.red}>
             <Title size="sm">Languages</Title>
             <StyledDiv2>{iconSkillTags(languages)}</StyledDiv2>
           </PortfolioContainer>

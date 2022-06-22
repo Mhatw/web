@@ -1,3 +1,4 @@
+import { Brightness, BrightnessHalf } from "@styled-icons/boxicons-solid";
 import styled from "styled-components";
 import { Button } from "../buttons";
 import { SvgContainer } from "../containers";
@@ -35,6 +36,10 @@ const StyledFooter = styled.footer`
       padding: 1.65rem 1.65rem;
       font-size: 0.75rem;
       white-space: nowrap;
+      svg {
+        width: 1.2rem;
+        margin-left: 0.5rem;
+      }
     }
     > div {
       background-color: ${(props) => props.theme.background.cuartiary};
@@ -75,7 +80,8 @@ export function Footer({ theme, setTheme }) {
     <StyledFooter>
       <div>
         <Button onClick={toggleTheme}>
-          {theme === "light" ? "dark" : "light"} theme
+          {theme === "light" ? "Light" : "Dark"} mode
+          {theme === "light" ? <BrightnessHalf /> : <Brightness />}
         </Button>
         <div>
           <SvgContainer></SvgContainer>

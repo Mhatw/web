@@ -54,7 +54,8 @@ export const projects = [
     name: "CalenCLI",
     description:
       "CalenCLI is a calendar on a command-line interface 💻 made with ruby",
-    image: "https://via.placeholder.com/150",
+    image:
+      "https://github.com/Mhatw/Blog-website/blob/main/src/calencli.PNG?raw=true",
     url: "https://github.com/Mhatw/CalenCLI",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["Control Flow", "Loops", "Methods", "Dates"],
@@ -66,7 +67,8 @@ export const projects = [
     name: "Pokemon Ruby",
     description:
       "This project consists to build a very close recreation of the classic Pokemon game.",
-    image: "https://via.placeholder.com/150",
+    image:
+      "https://github.com/Mhatw/Blog-website/blob/main/src/pok.PNG?raw=true",
     url: "https://github.com/Mhatw/Pokemon-Ruby",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["Clases", "Modules", "Inheritance"],
@@ -78,7 +80,8 @@ export const projects = [
     name: "CLIn Boards",
     description:
       "With CLIn Boards you can create as many Boards as you like. Each board can have as many lists and each list as many cards as you want. 💪🏼Your data is locally stored so don't worry about losing any board update. 🎉",
-    image: "https://via.placeholder.com/150",
+    image:
+      "https://github.com/Mhatw/Blog-website/blob/main/src/clin.PNG?raw=true",
     url: "https://github.com/Mhatw/CLIn-Boards",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["File Manipulation", "Clases", "JSON"],
@@ -90,7 +93,8 @@ export const projects = [
     name: "Expensable CLI",
     description:
       "Expensable is an expense/income tracker app that exposes an API to allow the developer to freely build their own interfaces to interact with the app data",
-    image: "https://via.placeholder.com/150",
+    image:
+      "https://github.com/Mhatw/Blog-website/blob/main/src/expensable.PNG?raw=true",
     url: "https://github.com/Mhatw/Expensable-CLI",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["HTTP Requests", "Classes", "Modules"],
@@ -102,7 +106,8 @@ export const projects = [
     name: "CLIvia Generator",
     description:
       "CLIvia generator is a game connect with an API which asks you questions and saves the score of your correct answers.",
-    image: "https://via.placeholder.com/150",
+    image:
+      "https://github.com/Mhatw/CLIvia-generator/blob/main/clivia.PNG?raw=true",
     url: "https://github.com/Mhatw/Expensable-CLI",
     icons: [<Terminal />, <Ruby />, <Github />],
     tags: ["HTTP Requests", "Classes", "Modules"],
@@ -172,7 +177,7 @@ export const projects = [
       "The brand was made for a fastfood restaurant. The brand was made with Adobe Illustrator and Adobe Photoshop.",
     image:
       "http://drive.google.com/uc?export=view&id=1dhXXKwRvtQ2VP27ONM_e0pOUsMBVjOAf",
-    url: "https://drive.google.com/file/d/1y9z5VV168bxjlSMYttstbORk-ALP8KNJ/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1OQdbndsOnlAJNqInoqnIEPEulFbdurKi/view?usp=sharing",
     icons: [<Adobeillustrator />, <Adobephotoshop />],
     tags: ["Color Theory", "Vectors", "Mockups", "Compositions"],
     bgcolor: bg,

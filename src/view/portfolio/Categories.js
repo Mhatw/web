@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import { PortfolioContainer } from "../../components/containers";
 import { Title } from "../../components/text";
 import { categories } from "../../data";
@@ -28,10 +28,11 @@ export function Categories() {
 }
 
 export function IndexCategories() {
+  const theme = useTheme();
   return (
     <>
       <StyledDiv>
-        <PortfolioContainer bgcolor="#F5F5F5">
+        <PortfolioContainer bgcolor={theme.background.gray}>
           {" "}
           <Title size="sm">Portfolio</Title>{" "}
         </PortfolioContainer>
