@@ -38,6 +38,11 @@ export const darkTheme = {
   background: {
     primary: "#000000",
     secondary: "#232323",
+    gray: "#f5f5f5",
+    yellow: "#fff1e6",
+    blue: "#dfe7fd",
+    brown: "#eae4e9",
+    red: "#fad2e1",
   },
   button: {
     primary: "#0077b6",

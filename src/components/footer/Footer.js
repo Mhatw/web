@@ -65,11 +65,18 @@ const StyledFooter = styled.footer`
   }
 `;
 
-export function Footer() {
+export function Footer({ theme, setTheme }) {
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+    localStorage.setItem("mhatwTheme", theme === "light" ? "dark" : "light");
+  };
+
   return (
     <StyledFooter>
       <div>
-        <Button color="tertiary">Click me!</Button>
+        <Button onClick={toggleTheme}>
+          {theme === "light" ? "dark" : "light"} theme
+        </Button>
         <div>
           <SvgContainer></SvgContainer>
         </div>
