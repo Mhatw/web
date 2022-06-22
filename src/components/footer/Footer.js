@@ -1,5 +1,6 @@
 import { Brightness, BrightnessHalf } from "@styled-icons/boxicons-solid";
 import styled from "styled-components";
+import { fonts } from "../../styles";
 import { Button } from "../buttons";
 import { SvgContainer } from "../containers";
 
@@ -55,7 +56,7 @@ const StyledFooter = styled.footer`
     }
   }
   p {
-    font-family: "Inter";
+    font-family: ${fonts.primary};
     font-style: normal;
     font-weight: 400;
     font-size: 0.75rem;

@@ -116,6 +116,19 @@ export const projects = [
   {
     id: 6,
     lang: ["javascript"],
+    name: "Organizable",
+    description:
+      "Keep track of all your projects and task with this app, application: organizable",
+    image:
+      "https://github.com/Mhatw/organizable/blob/main/assets/organizable.png?raw=true",
+    url: "https://organizable.vercel.app/",
+    icons: [<Javascript />, <Html5 />, <Css3 />, <Bulma />, <Github />],
+    tags: ["Funtions", "Objects", "Logins"],
+    bgcolor: bg,
+  },
+  {
+    id: 7,
+    lang: ["javascript"],
     name: "Contacts",
     description:
       "Keep track of contact emails and phone numbers in your local memory (your brain) is something from the past.",
@@ -126,7 +139,7 @@ export const projects = [
     bgcolor: bg,
   },
   {
-    id: 7,
+    id: 8,
     lang: ["javascript"],
     name: "To Do List",
     description:
@@ -138,7 +151,7 @@ export const projects = [
     bgcolor: bg,
   },
   {
-    id: 8,
+    id: 9,
     lang: ["javascript"],
     name: "Code Editor",
     description:
@@ -157,7 +170,7 @@ export const projects = [
     bgcolor: bg,
   },
   {
-    id: 9,
+    id: 10,
     lang: ["design"],
     name: "LBS Flores",
     description:
@@ -170,7 +183,7 @@ export const projects = [
     bgcolor: bg,
   },
   {
-    id: 10,
+    id: 11,
     lang: ["design"],
     name: "El Guapo Burguer",
     description:
@@ -183,7 +196,7 @@ export const projects = [
     bgcolor: bg,
   },
   {
-    id: 11,
+    id: 12,
     lang: ["design"],
     name: "MS constructora",
     description:
@@ -196,7 +209,7 @@ export const projects = [
     bgcolor: bg,
   },
   {
-    id: 12,
+    id: 13,
     lang: ["design"],
     name: "Fashion and Style Vision",
     description:
@@ -209,7 +222,7 @@ export const projects = [
     bgcolor: bg,
   },
   {
-    id: 13,
+    id: 14,
     lang: ["design"],
     name: "More designs here!",
     description:

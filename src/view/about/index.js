@@ -24,6 +24,7 @@ import {
   Linux,
   Postgresql,
   Rubyonrails,
+  Styledcomponents,
   Vite,
 } from "@styled-icons/simple-icons";
 import styled, { useTheme } from "styled-components";
@@ -166,6 +167,12 @@ const devSkills = [
     icon: <Terminal />,
     color: "#336791",
   },
+  {
+    id: 16,
+    name: "Styled Components",
+    icon: <Styledcomponents />,
+    color: "#7812f8",
+  },
 ];
 const designSkills = [
   {
@@ -199,7 +206,6 @@ const designSkills = [
     color: "#0acf83",
   },
 ];
-
 const languages = [
   {
     id: 1,
