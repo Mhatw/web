@@ -4,13 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./reset.css";
 import "./index.css";
 import App from "./App";
-import { Title } from "./components/text";
 import { HomeView } from "./view/home";
 import { PortfolioView } from "./view/portfolio";
 import { IndexCategories } from "./view/portfolio/Categories";
 import Category from "./view/portfolio/category";
 import { IndexContact } from "./view/contact";
 import NotFound from "./view/404";
+import { AboutView } from "./view/about";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -23,7 +23,7 @@ root.render(
           <Route index element={<IndexCategories />} />
           <Route path=":id" element={<Category />} />
         </Route>
-        <Route path="/about" element={<Title>about</Title>} />
+        <Route path="/about" element={<AboutView />} />
         <Route path="/contact" element={<IndexContact />} />
         <Route path="*" element={<NotFound />} />
       </Route>

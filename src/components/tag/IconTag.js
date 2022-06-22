@@ -5,7 +5,7 @@ const StyledTag = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: #000000;
+  color: ${(props) => props.theme.svg.primary};
   line-height: 11px;
   // border: 1px solid red;
   object-fit: cover;

@@ -16,7 +16,7 @@ const StyledDiv = styled.div`
 
   min-height: 70vh;
   div {
-    background-color: #9cbced;
+    background-color: ${(props) => props.theme.background.lightblue};
     svg {
       color: #fff;
     }
@@ -43,6 +43,7 @@ export function IndexContact() {
             <Linkedin />
           </Paragraph>
           <StyledButton
+            color="secondary"
             onClick={() =>
               window.open("https://www.linkedin.com/in/mhatw/", "_blank")
             }

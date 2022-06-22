@@ -1,3 +1,4 @@
+import { Brightness, BrightnessHalf } from "@styled-icons/boxicons-solid";
 import styled from "styled-components";
 import { Button } from "../buttons";
 import { SvgContainer } from "../containers";
@@ -35,6 +36,10 @@ const StyledFooter = styled.footer`
       padding: 1.65rem 1.65rem;
       font-size: 0.75rem;
       white-space: nowrap;
+      svg {
+        width: 1.2rem;
+        margin-left: 0.5rem;
+      }
     }
     > div {
       background-color: ${(props) => props.theme.background.cuartiary};
@@ -65,11 +70,19 @@ const StyledFooter = styled.footer`
   }
 `;
 
-export function Footer() {
+export function Footer({ theme, setTheme }) {
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+    localStorage.setItem("mhatwTheme", theme === "light" ? "dark" : "light");
+  };
+
   return (
     <StyledFooter>
       <div>
-        <Button color="tertiary">Click me!</Button>
+        <Button onClick={toggleTheme}>
+          {theme === "light" ? "Light" : "Dark"} mode
+          {theme === "light" ? <BrightnessHalf /> : <Brightness />}
+        </Button>
         <div>
           <SvgContainer></SvgContainer>
         </div>

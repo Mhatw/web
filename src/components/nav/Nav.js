@@ -40,7 +40,7 @@ const StyledNav = styled.nav`
     svg {
       width: 1.2rem;
       padding: 0;
-      color: ${(props) => props.theme.svg.hoverPrimary};
+      color: ${(props) => props.theme.svg.secondary};
     }
   }
 `;
@@ -85,7 +85,7 @@ const StyledDivOpen = styled.div`
   top: 0;
   overflow-y: hidden;
   overflow: auto;
-  background-color: ${(props) => props.theme.background.secondary};
+  background-color: ${(props) => props.theme.background.primary};
   flex-direction: row;
   align-items: center;
   justify-content: space-between;

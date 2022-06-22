@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import { Button } from "../../components/buttons";
 import { PortfolioContainer } from "../../components/containers";
 import { iconTags, tags } from "../../components/tag";
@@ -86,13 +86,14 @@ const StyledDiv2 = styled.div`
 `;
 export default function Category() {
   let params = useParams();
+  const theme = useTheme();
   let projectsData = projects.filter((project) =>
     project.lang.includes(params.id.toLowerCase())
   );
   console.log(params, projectsData);
   return projectsData.length !== 0 ? (
     <StyledDiv>
-      <PortfolioContainer bgcolor="#F5F5F5">
+      <PortfolioContainer bgcolor={theme.background.gray}>
         <Link to="/portfolio">
           <Title size="sm">{params.id}</Title>
         </Link>
@@ -102,7 +103,7 @@ export default function Category() {
           <PortfolioContainer
             className="render"
             key={project.id}
-            bgcolor={project.bgcolor}
+            bgcolor={theme.background.cardGray}
           >
             <div className="iconTagsContainer">{iconTags(project.icons)}</div>
             <Title size="sm">{project.name}</Title>
@@ -111,6 +112,7 @@ export default function Category() {
             <img src={project.image} alt={project.name} />
 
             <Button
+              color="secondary"
               maxWidth={true}
               onClick={() => window.open(`${project.url}`, "_blank")}
             >
