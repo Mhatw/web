@@ -219,7 +219,13 @@ export const projects = [
       "https://github.com/Mhatw/web/blob/main/src/assets/website.png?raw=true",
     url: "https://github.com/Mhatw/web",
     icons: [<ReactLogo />, <Javascript />, <Html5 />, <Css3 />, <Github />],
-    tags: ["Color Theory", "Vectors", "Mockups", "Compositions"],
+    tags: [
+      "Hooks",
+      "Router",
+      "Styled components",
+      "Light Dark Theme",
+      "Functions",
+    ],
     bgcolor: bg,
   },
 ];
