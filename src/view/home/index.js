@@ -82,7 +82,7 @@ export function HomeView() {
             maxWidth={true}
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1j5OATajjRVbJHlv8RXfGO0797lqYg5ZK/view?usp=sharing",
+                "https://drive.google.com/file/d/1Jhk-bW5zAjsLsRG8F7Icnf3OUWoxT04C/view?usp=sharing",
                 "_blank"
               )
             }
