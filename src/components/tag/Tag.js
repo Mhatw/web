@@ -18,7 +18,9 @@ const StyledTag = styled.div`
 `;
 
 export function tags(tags) {
+  let id = 1;
   return tags.map((tag) => {
-    return <StyledTag>{tag}</StyledTag>;
+    ++id;
+    return <StyledTag key={id}>{tag}</StyledTag>;
   });
 }

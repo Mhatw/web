@@ -17,7 +17,9 @@ const StyledTag = styled.div`
 `;
 
 export function iconTags(iconTags) {
+  let id = 1;
   return iconTags.map((icon) => {
-    return <StyledTag>{icon}</StyledTag>;
+    ++id;
+    return <StyledTag key={id}>{icon}</StyledTag>;
   });
 }

@@ -59,7 +59,6 @@ const StyledDiv = styled.div`
 
 function App() {
   const localTheme = localStorage.getItem("mhatwTheme");
-  console.log("current", localTheme);
   const [theme, setTheme] = React.useState(localTheme || "light");
 
   // get from local storage
