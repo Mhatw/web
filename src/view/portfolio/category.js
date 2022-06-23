@@ -90,7 +90,6 @@ export default function Category() {
   let projectsData = projects.filter((project) =>
     project.lang.includes(params.id.toLowerCase())
   );
-  console.log(params, projectsData);
   return projectsData.length !== 0 ? (
     <StyledDiv>
       <PortfolioContainer bgcolor={theme.background.gray}>
@@ -102,7 +101,7 @@ export default function Category() {
         {projectsData.map((project) => (
           <PortfolioContainer
             className="render"
-            key={project.id}
+            key={`project-${project.id}`}
             bgcolor={theme.background.cardGray}
           >
             <div className="iconTagsContainer">{iconTags(project.icons)}</div>

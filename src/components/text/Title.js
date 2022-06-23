@@ -27,7 +27,6 @@ export function Title({ size, color, ...props }) {
     secondary: theme.secondary,
   }[color];
 
-  console.log(textColor);
   return <StyledH2 size={textSize} color={textColor} {...props} />;
 }
 
