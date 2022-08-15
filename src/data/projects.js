@@ -228,4 +228,23 @@ export const projects = [
     ],
     bgcolor: bg,
   },
+  {
+    id: 16,
+    lang: ["react"],
+    name: "Get That Job",
+    description:
+      "Inspired by GetOnBoard, Get that job is a portal to connect professionals with companies through job posting, we created both the API and the frontend of the project in a team of 4, my role in the project was technical lead and in charge of the frontend development.",
+    image:
+      "https://github.com/Mhatw/GetThatJob/blob/main/src/assets/Captura-getThatJob.png?raw=true",
+    url: "get-that-job.vercel.app",
+    icons: [<ReactLogo />, <Javascript />, <Html5 />, <Css3 />, <Github />],
+    tags: [
+      "Hooks",
+      "Router",
+      "API's",
+      "Ruby on Rails",
+      "Fetch's",
+    ],
+    bgcolor: bg,
+  },
 ];
